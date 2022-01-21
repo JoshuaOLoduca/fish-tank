@@ -4,6 +4,7 @@ class GoFish extends Fish {
     super(options);
     this.surgeSecondsLeft = 0;
     this.maxSurge = 1.0;
+    this.imageUri = '/images/go_fish.jpg'; // Set the image
     this.surgMult = 3.0;
   }
 
