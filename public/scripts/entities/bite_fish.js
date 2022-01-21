@@ -7,7 +7,7 @@ class BiteFish extends Fish {
   update(t) {
     super.update(t);
     const fishNearMe = window.fishtank.getProximateDenizens(this.position, 65);
-    console.log(fishNearMe)
+    console.log(fishNearMe);
     if (fishNearMe.length > 0) {
       for (const fish of fishNearMe) {
         if (fish.id !== this.id && fish.isTasty === true) fish.kill();
